@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# ![WebApp](https://res.cloudinary.com/dr2jqbir9/image/upload/v1710589990/todo-frontend_pwdtos.png)
+# Taskify
+<table>
+<tr>
+<td>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Taskify is a user-friendly task management application designed to streamline productivity and organization. With a seamless interface, Taskify enables users to effortlessly log in, log out, and register accounts, ensuring personalized experiences tailored to individual needs.
 
-## Available Scripts
+Creating, deleting, and updating tasks is intuitive and efficient, empowering users to stay on top of their to-do lists with ease. Taskify also offers the functionality to checklist tasks, allowing for detailed progress tracking and completion monitoring.
 
-In the project directory, you can run:
+Additionally, users can enhance their experience by adding tasks to favorites for quick access to important items. Taskify further allows users to customize their environment by changing themes, catering to personal preferences and enhancing visual appeal.
 
-### `npm start`
+Overall, Taskify is a comprehensive task management solution that prioritizes user convenience and efficiency, making it the go-to choice for individuals seeking to organize their daily routines effectively.
+</td>
+</tr>
+</table>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Demo
+Here is a working live demo :  https://taskify-frontend-ten.vercel.app/
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## [Usage](https://taskify-frontend-ten.vercel.app/) 
 
-### `npm run build`
+### Development
+Want to contribute? Great!
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To fix a bug or enhance an existing module, follow these steps:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Fork the repo
+- Create a new branch (`git checkout -b improve-feature`)
+- Make the appropriate changes in the files
+- Add changes to reflect the changes made
+- Commit your changes (`git commit -am 'Improve feature'`)
+- Push to the branch (`git push origin improve-feature`)
+- Create a Pull Request 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Built with 
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [React Js](https://www.w3schools.com/REACT/DEFAULT.ASP) - React is a Popular JavaSript library used for build SinglePage applications.
+- [CSS](https://www.w3schools.com/css/) - CSS used for styling and responsiveness
+- [react-router-dom](https://www.w3schools.com/react/react_router.asp) -used for page navigations.
+- [react-context-api](https://react.dev/reference/react/createContext) - used for to create a global state
