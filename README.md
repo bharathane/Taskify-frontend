@@ -19,6 +19,12 @@ Overall, Taskify is a comprehensive task management solution that prioritizes us
 ## Demo
 Here is a working live demo :  https://taskify-frontend-ten.vercel.app/
 
+## sample user credentials
+1) username: Bharath
+2) password: bharath@123
+
+
+
 
 ## [Usage](https://taskify-frontend-ten.vercel.app/) 
 
