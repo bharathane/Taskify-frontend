@@ -1,0 +1,51 @@
+.nav-container {
+  width: 100vw;
+  height: 45px;
+  border-bottom: 1px solid black;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+  font-family: "Roboto";
+}
+.nav-dark-mod {
+  background-color: #202020;
+}
+.taskify-color {
+  color: white;
+}
+.Books-store-logo {
+  text-decoration: none;
+  color: #0b69ff;
+  margin-left: 50px;
+  margin-right: 300px;
+}
+ul {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-links {
+  text-decoration: none;
+}
+.dark-list-item {
+  color: white;
+}
+
+.them-button {
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 22px;
+}
+
+.light-color-theme-button {
+  color: white;
+}
+
+.dark-theme-button {
+  color: black;
+}

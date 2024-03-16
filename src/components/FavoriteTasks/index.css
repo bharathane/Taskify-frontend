@@ -1,0 +1,36 @@
+.fovireite-task {
+  width: 20vw;
+  height: 8vh;
+  border-radius: 20px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  margin: 50px;
+  list-style: none;
+}
+
+.start-style {
+  position: relative;
+  bottom: 20px;
+  left: 20px;
+  width: 40px;
+}
+
+.background-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.dark-bg {
+  background-color: black;
+  min-height: 92.5vh;
+  color: white;
+}
+
+.dark-list {
+  border: 2px solid white;
+}

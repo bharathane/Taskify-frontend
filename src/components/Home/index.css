@@ -1,0 +1,53 @@
+.input-elements-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 92vh;
+}
+
+.taskInputElement {
+  width: 70vw;
+  height: 35px;
+  border-radius: 10px;
+  margin-top: 20px;
+  font-size: 20px;
+  font-family: "Roboto";
+  padding: 10px;
+}
+
+.add-task-button {
+  height: 35px;
+  margin: 10px;
+  width: 100px;
+  background-color: rgb(93, 93, 230);
+  color: white;
+  font-size: 20px;
+  font-family: "Roboto";
+  border-radius: 5px;
+  margin-top: 40px;
+}
+.dark-theme-background {
+  background-color: #000000;
+  min-height: 92vh;
+}
+
+.loader-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+}
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.success-view-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 180px;
+}

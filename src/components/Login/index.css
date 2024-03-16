@@ -1,0 +1,65 @@
+.bgCon {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loginCon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 60%;
+  margin: 10px;
+}
+.inputCon {
+  display: flex;
+  flex-direction: column;
+  min-width: 50%;
+  min-height: 50vh;
+  justify-content: center;
+  align-items: center;
+  background: #fefeff;
+  box-shadow: 2px 8px 40px rgba(7, 7, 7, 0.08);
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px;
+}
+.books-image {
+  width: 40vw;
+}
+.formCon {
+  display: flex;
+  flex-direction: column;
+}
+.labelTxt {
+  font-family: "roboto";
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+.inputEl {
+  margin-bottom: 10px;
+  background: #eeeeee;
+  border-radius: 2px;
+  min-width: 350px;
+  min-height: 35px;
+}
+.btn {
+  background: #4094ef;
+  border-radius: 8px;
+  border-style: solid;
+  border-radius: 5px;
+  color: white;
+  border-width: 0px;
+  height: 30px;
+  font-family: roboto;
+  cursor: pointer;
+}
+@media screen and (max-width: 991px) {
+  .imgContainer {
+    display: none;
+  }
+}
+.err-msg {
+  color: red;
+  font-family: roboto;
+}

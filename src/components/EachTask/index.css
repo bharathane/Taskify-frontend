@@ -1,0 +1,89 @@
+.each-task-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70vw;
+  height: 45px;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.each-task-container input {
+  width: 20px;
+  height: 20px;
+}
+
+.each-task-container label {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  width: 82%;
+  font-style: italic;
+  margin: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
+}
+
+.each-task-container button {
+  text-align: right;
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  margin: 20px;
+}
+
+.each-task-container button:hover {
+  color: green;
+}
+
+.update-input-element {
+  width: 50vw !important;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+
+  font-style: italic;
+  outline: none;
+  margin-left: 15px;
+  padding-left: 20px;
+}
+
+.task-update-button {
+  height: 35px;
+
+  background-color: rgb(93, 93, 230);
+  color: black;
+  font-size: 20px;
+  font-family: "Roboto";
+}
+
+.dark-bg-li label {
+  color: white;
+}
+.dark-bg-li {
+  background-color: #202020;
+}
+
+.dark-bg-li button {
+  color: white;
+}
+
+.dark-bg-li input {
+  background-color: transparent;
+  color: white;
+}
+
+.chelistTaks {
+  text-decoration: line-through;
+  color: green;
+}
+
+.removeMark {
+  text-decoration: none !important;
+}
