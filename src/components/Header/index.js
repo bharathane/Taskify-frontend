@@ -11,6 +11,7 @@ const Header = () => {
   const logoutFromApp = () => {
     Cookies.remove("jwt_token");
     window.location.reload();
+    localStorage.removeItem("username");
   };
 
   return (

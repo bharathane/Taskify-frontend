@@ -15,7 +15,7 @@ const FavoriteTasks = () => {
             <Header />
             <div className={`background-container ${darkTheme}`}>
               {favoriteTasksList.length === 0 ? (
-                <h1>Npthing to Show! please add some tasks</h1>
+                <h1>Nothing to Show! please add some tasks</h1>
               ) : (
                 <>
                   {favoriteTasksList.map((each) => (

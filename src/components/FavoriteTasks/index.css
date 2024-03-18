@@ -23,14 +23,10 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  color: rgb(70, 70, 165);
 }
 
 .dark-bg {
   background-color: black;
   min-height: 92.5vh;
-  color: white;
-}
-
-.dark-list {
-  border: 2px solid white;
 }

@@ -47,6 +47,7 @@ const Login = () => {
 
     if (res.ok === true) {
       onSuccess(data.jwtToken);
+      localStorage.setItem("username", data.username);
     } else {
       onFailure(data.message);
     }

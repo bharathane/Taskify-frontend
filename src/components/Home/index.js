@@ -49,20 +49,24 @@ const Home = () => {
 
   // post a new Task
   const onAddTask = async () => {
-    const postUrl = "https://task-manager-backend-2qah.onrender.com/addTask";
-    const jwtToken = Cookies.get("jwt_token");
-    const postOptions = {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${jwtToken}`,
-      },
-      body: JSON.stringify({ task: taskIput }),
-    };
-    await fetch(postUrl, postOptions);
+    if (taskIput !== "") {
+      const postUrl = "https://task-manager-backend-2qah.onrender.com/addTask";
+      const jwtToken = Cookies.get("jwt_token");
+      const postOptions = {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${jwtToken}`,
+        },
+        body: JSON.stringify({ task: taskIput }),
+      };
+      await fetch(postUrl, postOptions);
 
-    makingApiCall();
-    setTaskInput("");
+      makingApiCall();
+      setTaskInput("");
+    } else {
+      alert("Please Enter Some Tasks");
+    }
   };
 
   //delete a Task
@@ -178,9 +182,23 @@ const Home = () => {
       {(value) => {
         const { theme } = value;
         const DarkThemeBackground = theme ? "dark-theme-background" : "";
+        const usePorfileContainerDark = theme
+          ? "user-profile-container-dark"
+          : "";
         return (
           <div>
             <Header />
+            <div
+              className={`user-profile-container ${usePorfileContainerDark}`}
+            >
+              <h1 className="user-profile">
+                {localStorage.getItem("username")[0].toUpperCase()}
+              </h1>
+
+              <h1 className="username-head">
+                {localStorage.getItem("username")}
+              </h1>
+            </div>
             <div className={`input-elements-container ${DarkThemeBackground}`}>
               <div className="input-container">
                 <input
@@ -198,6 +216,7 @@ const Home = () => {
                   Add
                 </button>
               </div>
+
               <div>{renderFinalVeiw()}</div>
             </div>
           </div>
