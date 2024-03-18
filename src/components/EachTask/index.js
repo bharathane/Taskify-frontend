@@ -55,10 +55,12 @@ const EachTask = (props) => {
         const { theme } = value;
         const darBgForLi = theme ? "dark-bg-li" : "";
         const checkListTask = isStyled ? "chelistTaks" : "";
+        const isCheckedCheckBox = isStyled ? true : false;
         return (
           <li className={`each-task-container ${darBgForLi} `}>
             <input
               type="checkbox"
+              checked={isCheckedCheckBox}
               id="checkboxElement"
               onChange={callMarkdownFunc}
             />
