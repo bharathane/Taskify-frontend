@@ -35,7 +35,7 @@ const EachTask = (props) => {
   const callUpdateFunc = () => {
     updateTask(id, updateInputVal);
     makingApiCall();
-    window.location.reload();
+   
   };
 
   // pass Id for favoritelist add on
