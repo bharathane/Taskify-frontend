@@ -35,7 +35,6 @@ const EachTask = (props) => {
   const callUpdateFunc = () => {
     updateTask(id, updateInputVal);
     makingApiCall();
-    window.location.reload();
   };
 
   // pass Id for favoritelist add on
@@ -61,7 +60,7 @@ const EachTask = (props) => {
             <input
               type="checkbox"
               checked={isCheckedCheckBox}
-              id="checkboxElement"
+              id={task.split(" ").join("")}
               onChange={callMarkdownFunc}
             />
             {isUpdateClick ? (
@@ -72,7 +71,10 @@ const EachTask = (props) => {
                 onChange={onChangeUpdateInput}
               />
             ) : (
-              <label htmlFor="checkboxElement" className={checkListTask}>
+              <label
+                htmlFor={task.split(" ").join("")}
+                className={checkListTask}
+              >
                 {" "}
                 {task}
               </label>

@@ -100,7 +100,7 @@ const Home = () => {
     };
 
     const resposne = await fetch(updateUrl, updateOption);
-    console.log(await resposne.json());
+    await resposne.json();
   };
 
   //get id for markdown
