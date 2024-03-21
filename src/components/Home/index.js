@@ -11,7 +11,7 @@ import EachTask from "../EachTask";
 const Home = () => {
   const [tasksList, setTasksList] = useState([]);
   const [taskIput, setTaskInput] = useState("");
-  const [markStatus, setMarkStatus] = useState(false);
+  const [markStatus, setMarkStatus] = useState(true);
 
   const [tasksStatus, setTasksStatus] = useState(apiConstains.initial);
 
