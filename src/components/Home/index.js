@@ -11,6 +11,7 @@ import EachTask from "../EachTask";
 const Home = () => {
   const [tasksList, setTasksList] = useState([]);
   const [taskIput, setTaskInput] = useState("");
+  const [markStatus, setMarkStatus] = useState(false);
 
   const [tasksStatus, setTasksStatus] = useState(apiConstains.initial);
 
@@ -88,6 +89,7 @@ const Home = () => {
   // update task
 
   const updateTask = async (updateId, updateInputVal) => {
+   
     const updateUrl = `https://task-manager-backend-2qah.onrender.com/update/${updateId}`;
     const jwtToken = Cookies.get("jwt_token");
     const updateOption = {
@@ -106,6 +108,7 @@ const Home = () => {
   //get id for markdown
 
   const getIdForMarkdown = async (id) => {
+      setMarkStatus(!markStatus);
     const UpdateStatusUrl = `https://task-manager-backend-2qah.onrender.com/updateStatus/${id}`;
     const jwtToken = Cookies.get("jwt_token");
     const statusOptions = {
@@ -114,7 +117,7 @@ const Home = () => {
         "Content-Type": "application/json",
         Authorization: `Bearer ${jwtToken}`,
       },
-      body: JSON.stringify({ isComplete: true }),
+      body: JSON.stringify({ isComplete: markStatus }),
     };
     await fetch(UpdateStatusUrl, statusOptions);
     makingApiCall();
